@@ -1,0 +1,74 @@
+
+@import 'sass/helpers/variables'
+
+@import 'sass/helpers/mixins'
+
+@import 'sass/components/buttons'
+
+@import 'sass/layout/header'
+
+@import 'sass/layout/footer'
+
+@import 'sass/components/loading'
+
+
+.header
+  background-image: url(../img/home_artist_mystory1.jpg)
+  height: 140vh
+  background-position: top center
+  padding-bottom: $mainPadd
+  @include prefixer(background-size, cover, moz webkit o)
+
+
+.timeline-section
+  background-color: $timlineColor
+  color: $mainFontColor
+  background-image: url(../img/home_artist_bgsection2.jpg)
+  background-repeat: no-repeat
+  h6
+    padding-top: 20px
+  h6 ~ hr
+    border-top: 1px solid $borderColor
+    margin: 0 auto
+    width: 23%
+  .info-par
+    width: 80%
+    font-size: 35px
+    color: $secondColor
+    margin: 20px auto
+    padding-bottom: 20px
+    &::after
+        content: ""
+        display: block
+        margin: 30px auto
+        width: 2px
+        height: 80px
+        margin-bottom: 20px
+        background-color: $borderColor
+  .years
+    border: 1px solid $mainFontColor
+    padding: 5px 8px
+    @include transition(all .4s ease-in-out)
+    &:hover
+      border-color: $secondColor
+      color: $secondColor
+  hr
+      border-top: 2px solid $borderColor
+      margin: 20px auto
+      width: 45%
+  .info-box
+    margin-bottom: 50px
+    h4
+      color: $secondColor
+      margin-bottom: 20px
+    p:first-of-type
+      margin-bottom: 0
+
+  .img
+    img
+      width: 100%
+  .count-down
+    padding: 50px 0
+    h2
+      margin-top: 40px
+      color: $secondColor

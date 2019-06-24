@@ -1,0 +1,207 @@
+/*.message-actionable
+ * border: 1px dotted yellow
+ * color: yellow
+ * margin: 20px
+ * padding: 10px
+ * .message-actionable button
+ * float: right*/
+a {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+.navbar {
+  padding: 2.5rem 1rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #FFF !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 20px;
+  color: #7a7a7a;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FFF;
+}
+
+.header {
+  background-image: url(../img/home_artist_slider_slide2.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  vertical-align: baseline;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.header .intro {
+  color: #7a7a7a;
+  position: absolute;
+  top: 30vh;
+  width: 30%;
+}
+.header .intro h2 {
+  margin-bottom: 50px;
+  text-decoration-line: underline;
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 1080px) {
+  .header .intro h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .header .intro h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .header .intro h2 {
+    font-size: 13px;
+  }
+}
+.header .intro span {
+  color: #FFF;
+}
+.header .intro p {
+  text-align: center;
+  font-size: 12px;
+}
+.header .intro p img {
+  width: 12px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.footer-section {
+  background-color: #202020;
+  background-image: url(../img/home_artist_bg_footer.png);
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  color: #858585;
+}
+.footer-section .footer {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #ffffff33;
+}
+.footer-section .footer p {
+  width: 60%;
+  margin: 20px auto;
+}
+.footer-section .copyright {
+  padding: 30px 0;
+}
+
+.head {
+  background-image: url(../img/home_artist_contact1.jpg);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.head .info .greeting {
+  color: #858585;
+  font-size: 12.5rem;
+}
+.head .info h2 {
+  line-height: 0;
+}
+.head .info h2 i {
+  margin: 30px 20px 30px 0;
+}
+.head .info h4 {
+  line-height: 0;
+}
+.head .info h4 i {
+  margin: 30px 20px 30px 0;
+}
+.head .info .location {
+  margin-top: 30px;
+}
+.head .info hr {
+  border-top: 1px solid #FFF;
+  margin-top: 30px;
+  width: 40%;
+  margin: 0;
+}
+
+.contact-form {
+  background-image: url(../img/home_artist_contact2.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #3a3a3a;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  color: #FFF;
+}
+.contact-form .social {
+  font-size: 25px;
+}
+.contact-form .social p {
+  margin-bottom: 30px;
+}
+.contact-form .social i {
+  color: #ffffff33;
+  margin-right: 20px;
+}
+.contact-form h3 {
+  margin-bottom: 30px;
+  color: #858585;
+}
+.contact-form .form-control {
+  margin-top: 20px;
+  background-color: #343737;
+  color: #FFF;
+}
+.contact-form .form-control:focus {
+  border-color: #FFF;
+  box-shadow: none;
+}
+.contact-form textarea.form-control {
+  height: 150px;
+  resize: none;
+}
+.contact-form .btn-block {
+  margin-top: 20px;
+  background-color: #a5a5a5;
+  color: #FFF;
+  border-color: #a5a5a5;
+  padding: 8px 6px;
+}
+
+/*# sourceMappingURL=contact.css.map */

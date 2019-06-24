@@ -1,0 +1,138 @@
+// my work section
+
+.my-work
+  background-color: $mainColor
+  background-image: url(../img/home_artist_bgsection2.jpg)
+  background-repeat: no-repeat
+  background-position: center center
+  background-attachment: fixed
+  vertical-align: baseline
+  width: 100%
+  color: $mainFontColor
+  padding-top: $mainPadd
+  padding-bottom: $mainPadd
+  @include prefixer(background-size, cover, moz o webkit)
+  .filters
+    h1
+      margin-bottom: 30px
+    ul
+      display: inline-block
+      margin-bottom: 0
+      list-style: none
+      li
+        float: left
+        cursor: pointer
+        border-bottom: 1px solid $borderColor
+        padding-bottom: 15px
+        padding-right: 35px
+        &:last-child
+          padding-right: 0px
+          @media (max-width: 576px)
+            padding-right: 35px
+        @media (max-width: 576px)
+          float: none
+          border-bottom: none
+          margin-bottom: 10px
+
+      .active
+        a
+          border-bottom: 2px solid $borderColor
+          padding-bottom: 16px
+          @media (max-width: 576px)
+            border-bottom: none
+      a
+        color: $mainFontColor
+    &::after
+      content: ""
+      display: block
+      margin: 0 auto
+      width: 2px
+      height: 80px
+      margin-bottom: 20px
+      background-color: $borderColor
+      @media (max-width: 576px)
+        display: none
+
+  .projects
+    img
+      width: 100%
+      padding: 20px
+      &:hover
+        transform: scale(1.1)
+        @include transition(all 0.4s ease-in-out)
+  .view-all
+    text-align: center
+    button
+      background-color: transparent
+      padding: 20px 180px
+      border: 2px solid $borderColor
+      color: $mainFontColor
+      display: inline-block
+      font-size: 15px
+      line-height: 2
+      letter-spacing: 6px
+      @include transition(all .5s ease-in-out)
+      &:hover
+        border-color: #FFF
+      @media (max-width: 576px)
+        padding: 10px 90px
+    hr
+      margin-top: 5px
+      border-top-color: $borderColor
+    &::before
+      content: ""
+      width: 2px
+      height: 80px
+      background-color: $borderColor
+      display: block
+      margin: 0 auto
+// My Story Section
+.my-story
+  padding-top: $mainPadd
+  padding-bottom: $mainPadd
+  background-image: url(../img/home_artist_bgsection1.jpg)
+  color: $mainFontColor
+  @include prefixer(background-size, cover, moz o webkit)
+  .info
+    margin-bottom: 50px
+    p
+      text-transform: uppercase
+      padding-bottom: 10px
+      letter-spacing: 2px
+      font-weight: 500
+    hr
+      width: 14%
+      border-color: #858585
+      margin: auto
+    h1
+      font-size: 2.4rem
+      color: $secondColor
+      margin-top: 20px
+  .artist-img
+    img
+      width: 100%
+    @media (max-width: 768px)
+      margin-bottom: 20px
+  .story
+    padding: 0 40px
+    text-align: left
+
+    p
+      margin-bottom: 15px
+      font-weight: 500
+    .social-media
+      margin-bottom: 15px
+      i
+        margin: 1rem 0 1rem 1rem
+        font-size: 22px
+        color: $mainFontColor
+        @include transition(all .5s ease-in-out)
+        &:hover
+          color: $secondColor
+    .read
+      text-transform: uppercase
+      letter-spacing: 4px
+      color: $mainFontColor
+      border-bottom: 2px solid $borderColor
+      padding-bottom: 6px
+      font-weight: 500

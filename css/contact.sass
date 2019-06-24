@@ -1,0 +1,80 @@
+@import 'sass/helpers/variables'
+
+@import 'sass//helpers/mixins'
+
+@import 'sass/pages/global'
+
+@import 'sass/components/buttons'
+
+@import 'sass/layout/header'
+
+@import 'sass/layout/footer'
+
+@import 'sass/components/loading'
+
+.head
+    background-image: url(../img/home_artist_contact1.jpg)
+    @include prefixer(background-size, cover, moz o webkit)
+    background-position: center
+    background-repeat: no-repeat
+    height: 120vh
+    color: $buttonColor
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    .info
+        .greeting
+            color: $mainFontColor
+            font-size: 12.5rem
+        h2
+            line-height: 0
+            i
+                margin: 30px 20px 30px 0
+        h4
+
+            line-height: 0
+            i
+                margin: 30px 20px 30px 0
+        .location
+            margin-top: 30px
+        hr
+            border-top: 1px solid #FFF
+            margin-top: 30px
+            width: 40%
+            margin: 0
+
+
+.contact-form
+    background-image: url(../img/home_artist_contact2.png)
+    background-position: center bottom
+    background-repeat: no-repeat
+    background-color: $timlineColor
+    padding-top: $mainPadd
+    padding-bottom: $mainPadd + 50
+    color: #FFF
+    .social
+        font-size: 25px
+        p
+            margin-bottom: 30px
+        i
+            color: $borderColor
+            margin-right: 20px
+    h3
+        margin-bottom: 30px
+        color: $mainFontColor
+    .form-control
+        margin-top: 20px
+        background-color: #343737
+        color: $buttonColor
+        &:focus
+            border-color: $buttonColor
+            box-shadow: none
+    textarea.form-control
+        height: 150px
+        resize: none
+    .btn-block
+        margin-top: 20px
+        background-color: #a5a5a5
+        color: $buttonColor
+        border-color: #a5a5a5
+        padding: 8px 6px
