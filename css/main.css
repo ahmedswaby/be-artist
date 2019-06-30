@@ -28,6 +28,9 @@ hr {
   position: fixed;
   z-index: 100;
 }
+.navbar .navbar-toggler {
+  background-color: #FFF;
+}
 
 .navbar-light .navbar-nav .nav-item.active .nav-link {
   color: #FFF !important;
